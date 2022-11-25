@@ -1,0 +1,28 @@
+# !/bin/bash
+
+START_ECHO_FRONT="\033[37m"
+CHECK_ECHO_FRONT="\033[33m"
+SUCC_ECHO_FRONT="\033[32m"
+ERR_ECHO_FRONT="\033[31m"
+ECHO_BACK="\033[0m"
+
+echo -e "
+${SUCC_ECHO_FRONT}gad${ECHO_BACK} = git add
+${SUCC_ECHO_FRONT}gall${ECHO_BACK} = git add .
+${SUCC_ECHO_FRONT}gb${ECHO_BACK} = git branch
+${SUCC_ECHO_FRONT}gc${ECHO_BACK} = git commit
+${SUCC_ECHO_FRONT}gcm${ECHO_BACK} = git commit -m
+${SUCC_ECHO_FRONT}gco${ECHO_BACK} = git checkout
+${SUCC_ECHO_FRONT}gcom${ECHO_BACK} = git checkout master
+${SUCC_ECHO_FRONT}gcob${ECHO_BACK} = git checkout -b
+${SUCC_ECHO_FRONT}gd${ECHO_BACK} = git diff
+${SUCC_ECHO_FRONT}gk${ECHO_BACK} = git clone
+${SUCC_ECHO_FRONT}gpull${ECHO_BACK} = git pull
+${SUCC_ECHO_FRONT}gp${ECHO_BACK} = git push
+${SUCC_ECHO_FRONT}glog${ECHO_BACK} = git log
+${SUCC_ECHO_FRONT}gls${ECHO_BACK} = git log --oneline --graph
+${SUCC_ECHO_FRONT}gst${ECHO_BACK} = git status
+${SUCC_ECHO_FRONT}gre${ECHO_BACK} = git reset
+${SUCC_ECHO_FRONT}greh${ECHO_BACK} = git reset HEAD
+"
+
